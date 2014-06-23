@@ -1,4 +1,4 @@
-package es.unileon.librarystaxparser;
+package es.unileon.librarystaxparser.main;
 
 import es.unileon.librarystaxparser.exceptions.FileNotFoundException;
 import es.unileon.librarystaxparser.exceptions.NoParametersException;
