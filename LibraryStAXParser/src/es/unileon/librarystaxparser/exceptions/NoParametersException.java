@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package es.unileon.librarystaxparser.exceptions;
 
 /**
- *
- * @author EmanuelIosif
+/**
+ * Excepción que se lanza en caso de que no no se haya introducido
+ * la ubicación del fichero al que se quiere acceder
  */
 public class NoParametersException extends Exception{
     

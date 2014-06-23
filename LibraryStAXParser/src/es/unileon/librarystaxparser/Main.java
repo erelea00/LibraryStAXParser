@@ -8,11 +8,9 @@ package es.unileon.librarystaxparser;
 
 import es.unileon.librarystaxparser.exceptions.FileNotFoundException;
 import es.unileon.librarystaxparser.exceptions.NoParametersException;
-import java.io.IOException;
 
 /**
- *
- * @author EmanuelIosif
+ * Clase de entrada de la aplicación. 
  */
 public class Main {
 

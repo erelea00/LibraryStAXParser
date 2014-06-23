@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package es.unileon.librarystaxparser.exceptions;
 
 /**
- *
- * @author EmanuelIosif
+ * Excepción que se lanza en caso de que no exista un ficher al que
+ * se quiere acceder.
  */
 public class FileNotFoundException extends Exception{
     
