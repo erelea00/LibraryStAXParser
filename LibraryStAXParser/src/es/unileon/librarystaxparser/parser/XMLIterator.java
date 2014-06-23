@@ -12,20 +12,20 @@ import java.util.Iterator;
  * Interfaz que implementarán los iteradores xml concretos
  * @param <T> generic type
  */
-public abstract class XMLIterator<T> implements Iterator<T>{
+public interface XMLIterator<T>{
     
     /**
      * Método que determina si hay elemento siguiente en la colección.
      * @return verdadero si hay elemento siguente, falso en caso contrario.
      */
-    @Override
-    public abstract boolean hasNext();
+
+    public boolean hasNext();
     
     /**
      * Método que devuelve el siguiente objeto de la colección.
      * @return el siguiente objeto de la colección.
      */
-    @Override
-    public abstract T next();
+
+    public T next();
     
 }
