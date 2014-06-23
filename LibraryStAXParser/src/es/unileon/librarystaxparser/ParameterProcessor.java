@@ -1,15 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package es.unileon.librarystaxparser;
 
 import es.unileon.librarystaxparser.exceptions.FileNotFoundException;
 import java.io.File;
 
 /**
+ * @author Adrian Diez
+ * @author Emanuel Iosif
+ * @author Ivan de Paz
+ * @since 15/06/2014
+ * @version 1
+ * 
  * Clase que se encarga de verificar si el fichero xml reside en la ubicación que
  * el usuario ha introducido como argumento al lanzar el programa.
  */
