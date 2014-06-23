@@ -1,5 +1,7 @@
 package es.unileon.librarystaxparser.parser;
 
+import java.util.Iterator;
+
 /**
  * @author Adrian Diez
  * @author Emanuel Iosif
@@ -9,18 +11,18 @@ package es.unileon.librarystaxparser.parser;
  * 
  * Interfaz que implementarán los iteradores xml concretos
  */
-public interface XMLIterator {
+public abstract class XMLIterator<T> implements Iterator<T>{
     
     /**
      * Método que determina si hay elemento siguiente en la colección.
      * @return verdadero si hay elemento siguente, falso en caso contrario.
      */
-    public boolean hasNext();
+    public abstract boolean hasNext();
     
     /**
      * Método que devuelve el siguiente objeto de la colección.
      * @return el siguiente objeto de la colección.
      */
-    public Object next();
+    public abstract T next();
     
 }
