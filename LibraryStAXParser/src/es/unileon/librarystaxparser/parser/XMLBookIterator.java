@@ -29,7 +29,7 @@ public class XMLBookIterator implements XMLIterator {
      * Pila en la que almacenar los nodos abiertos (para saber en que nodo
      * nos encontramos para cada instante del bucle).
      */
-    Stack<String> m_stNodeStack;  
+    private Stack<String> m_stNodeStack;  
     
     
     
