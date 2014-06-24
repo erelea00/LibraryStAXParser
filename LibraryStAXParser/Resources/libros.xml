@@ -1,0 +1,813 @@
+<catalogo>
+<libro isbn="9788489660342">
+    <titulo>
+    	Piensa en Java
+    </titulo>
+    <autores idAutor="BruEck">
+      <autor>
+          <nombre>
+          	Bruce
+          </nombre>
+          <primerApellido>
+          	Eckel
+          </primerApellido>
+          <segundoApellido>
+          	Louis
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		conde
+              </titulo> 
+              <fechaConcesion>
+		4/2/2010
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="PreHal">
+      <nombre>
+      	Prentice Hall
+      </nombre>
+    </editorial>
+    <precio>
+    	79.95
+    </precio>
+</libro>
+<libro isbn="9789702605188">
+    <titulo>
+    Java: Como programar
+    </titulo>
+    <autores idAutor="FamDei">
+      <autor>
+          <nombre>
+		Paul J.
+          </nombre>
+          <primerApellido>
+          	Deitel
+          </primerApellido>
+          <segundoApellido>
+		Mark
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque				
+              </titulo> 
+              <fechaConcesion>
+             	5/3/1969
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+	<autor>
+          <nombre>
+          	Harvey M.
+          </nombre>
+          <primerApellido>
+          	Deitel
+          </primerApellido>
+          <segundoApellido>
+		Merinou
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		conde
+              </titulo> 
+              <fechaConcesion>
+             	3/3/1978
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="PreHalMex">
+      <nombre>
+      	Prentice Hall Mexico
+      </nombre>
+    </editorial>
+    <precio>
+    	55
+    </precio>
+</libro>
+<libro isbn="978912311111">
+    <titulo>
+    C: Como programar
+    </titulo>
+    <autores idAutor="WilFer">
+      <autor>
+          <nombre>
+		Wilfredo
+          </nombre>
+          <primerApellido>
+          	Arset
+          </primerApellido>
+          <segundoApellido>
+		Webber
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+             	24/3/1939
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+	<autor>
+          <nombre>
+          	Fernando
+          </nombre>
+          <primerApellido>
+          	Alonso
+          </primerApellido>
+          <segundoApellido>
+		Plaza
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+             	18/6/1958
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="PreHalBra">
+      <nombre>
+      	Prentice Hall Brazil
+      </nombre>
+    </editorial>
+    <precio>
+    	40
+    </precio>
+</libro>
+<libro isbn="9789248538341">
+    <titulo>
+    Hola Mundo
+    </titulo>
+    <autores idAutor="AugFer">
+      <autor>
+          <nombre>
+		Augusto
+          </nombre>
+          <primerApellido>
+          	Fernandez
+          </primerApellido>
+          <segundoApellido>
+		Martinez
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+             	29/6/1964
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>	
+    </autores>
+    <editorial idEditorial="EdEver">
+      <nombre>
+      	ED Everest
+      </nombre>
+    </editorial>
+    <precio>
+    	80
+    </precio>
+</libro>
+<libro isbn="9658453234112">
+    <titulo>
+    Lenguajes y automatas
+    </titulo>
+    <autores idAutor="Fed">
+      <autor>
+          <nombre>
+		Federic
+          </nombre>
+          <primerApellido>
+          	Blanc
+          </primerApellido>
+          <segundoApellido>
+		Evra
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+             	17/8/1954
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+      <autor>	
+          <nombre>
+		Louis
+          </nombre>
+          <primerApellido>
+          	Panis
+          </primerApellido>
+          <segundoApellido>
+		Napoleon
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+             	9/9/1984
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>		
+    </autores>
+    <editorial idEditorial="LoivSA">
+      <nombre>
+      	Loivre SA
+      </nombre>
+    </editorial>
+    <precio>
+    	99.9
+    </precio>
+</libro>
+<libro isbn="915845324312">
+    <titulo>
+    La manzana vs el androide
+    </titulo>
+    <autores idAutor="SteMacc">
+      <autor>
+          <nombre>
+		Steve
+          </nombre>
+          <primerApellido>
+          	Maccmanaman
+          </primerApellido>
+          <segundoApellido>
+		Lewis
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+             	11/9/1964
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+      <autor>	
+          <nombre>
+		Tom
+          </nombre>
+          <primerApellido>
+          	Sawyer
+          </primerApellido>
+          <segundoApellido>
+		Mat
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+             	15/7/1982
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+      <autor>	
+          <nombre>
+		Jean
+          </nombre>
+          <primerApellido>
+          	Dean
+          </primerApellido>
+          <segundoApellido>
+		Sawyer
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+             	18/8/1988
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+      <autor>	
+          <nombre>
+		Paul
+          </nombre>
+          <primerApellido>
+          	Elvis
+          </primerApellido>
+          <segundoApellido>
+		Dyer
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+             	24/11/1972
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>						
+    </autores>
+    <editorial idEditorial="PrenHall">
+      <nombre>
+      	Prentice Hall
+      </nombre>
+    </editorial>
+    <precio>
+    	199.95
+    </precio>
+</libro>
+<libro isbn="90000233312">
+    <titulo>
+    	El juego de la vida
+    </titulo>
+    <autores idAutor="BruEck">
+      <autor>
+          <nombre>
+          	Bruce
+          </nombre>
+          <primerApellido>
+          	Willis
+          </primerApellido>
+          <segundoApellido>
+          	Stephen
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+		28/11/1996
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="PreHal">
+      <nombre>
+      	Prentice Hall
+      </nombre>
+    </editorial>
+    <precio>
+    	19.95
+    </precio>
+</libro>
+<libro isbn="90800233312">
+    <titulo>
+    	El fin de los dias
+    </titulo>
+    <autores idAutor="ArthPer">
+      <autor>
+          <nombre>
+          	Arthur
+          </nombre>
+          <primerApellido>
+          	Perez
+          </primerApellido>
+          <segundoApellido>
+          	Seal
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+		21/10/1992
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="Santil">
+      <nombre>
+      	Santillana
+      </nombre>
+    </editorial>
+    <precio>
+    	9.95
+    </precio>
+</libro>
+<libro isbn="90000233312">
+    <titulo>
+    	Platero y tu
+    </titulo>
+    <autores idAutor="AlvMer">
+      <autor>
+          <nombre>
+          	Alvaro
+          </nombre>
+          <primerApellido>
+          	Merino
+          </primerApellido>
+          <segundoApellido>
+          	Gonzalez
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+		18/4/1989
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="Santil">
+      <nombre>
+      	Santillana
+      </nombre>
+    </editorial>
+    <precio>
+    	19.95
+    </precio>
+</libro>
+<libro isbn="90440233312">
+    <titulo>
+    	Comecocos
+    </titulo>
+    <autores idAutor="AdolBla">
+      <autor>
+          <nombre>
+          	Adolfo
+          </nombre>
+          <primerApellido>
+          	Blanco
+          </primerApellido>
+          <segundoApellido>
+          	Diez
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+		18/2/1988
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="Santil">
+      <nombre>
+      	Santillana
+      </nombre>
+    </editorial>
+    <precio>
+    	29.95
+    </precio>
+</libro>
+<libro isbn="90440233312">
+    <titulo>
+    	A la sombra de mi sombra
+    </titulo>
+    <autores idAutor="OliHer">
+      <autor>
+          <nombre>
+          	Oliver
+          </nombre>
+          <primerApellido>
+          	Hernandez
+          </primerApellido>
+          <segundoApellido>
+          	Vidal
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+		22/3/1978
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="SantilHol">
+      <nombre>
+      	Santillana Holidays
+      </nombre>
+    </editorial>
+    <precio>
+    	39
+    </precio>
+</libro>
+<libro isbn="9106987424312">
+    <titulo>
+    	Dom a traves de JAXP
+    </titulo>
+    <autores idAutor="SteMacc">
+      <autor>
+          <nombre>
+		Steve
+          </nombre>
+          <primerApellido>
+          	Maccmanaman
+          </primerApellido>
+          <segundoApellido>
+		Lewis
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+             	11/9/1964
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+      <autor>	
+          <nombre>
+		Tom
+          </nombre>
+          <primerApellido>
+          	Sawyer
+          </primerApellido>
+          <segundoApellido>
+		Mat
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+             	15/7/1982
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+      <autor>
+          <nombre>
+		Peter
+          </nombre>
+          <primerApellido>
+          	Sawyer
+          </primerApellido>
+          <segundoApellido>
+		Mat
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+             	15/8/1980
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+      <autor>	
+          <nombre>
+		Jean
+          </nombre>
+          <primerApellido>
+          	Dean
+          </primerApellido>
+          <segundoApellido>
+		Sawyer
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+             	18/8/1988
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+      <autor>	
+          <nombre>
+		Paul
+          </nombre>
+          <primerApellido>
+          	Elvis
+          </primerApellido>
+          <segundoApellido>
+		Dyer
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+             	24/11/1972
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+      <autor>	
+          <nombre>
+		Paul
+          </nombre>
+          <primerApellido>
+          	Elvis
+          </primerApellido>
+          <segundoApellido>
+		De la Rosa
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque
+              </titulo> 
+              <fechaConcesion>
+             	21/11/1970
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>							
+    </autores>
+    <editorial idEditorial="PrenHall">
+      <nombre>
+      	Prentice Hall
+      </nombre>
+    </editorial>
+    <precio>
+    	25
+    </precio>
+</libro>
+<libro isbn="9789772605188">
+    <titulo>
+    	Como programar en 3 dias
+    </titulo>
+    <autores idAutor="FamDei">
+      <autor>
+          <nombre>
+		Paul J.
+          </nombre>
+          <primerApellido>
+          	Deitel
+          </primerApellido>
+          <segundoApellido>
+		Mark
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque	
+              </titulo> 
+              <fechaConcesion>
+             	5/3/1969
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+	<autor>
+          <nombre>
+          	Harvey M.
+          </nombre>
+          <primerApellido>
+          	Deitel
+          </primerApellido>
+          <segundoApellido>
+		Merinou
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		conde
+              </titulo> 
+              <fechaConcesion>
+             	3/3/1978
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="PreHalMex">
+      <nombre>
+      	Prentice Hall Mexico
+      </nombre>
+    </editorial>
+    <precio>
+    	55
+    </precio>
+</libro>
+<libro isbn="90803213312">
+    <titulo>
+    	El libro numero 14
+    </titulo>
+    <autores idAutor="ArthPer">
+      <autor>
+          <nombre>
+          	Arthur
+          </nombre>
+          <primerApellido>
+          	Perez
+          </primerApellido>
+          <segundoApellido>
+          	Seal
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+		21/10/1992
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="Santil">
+      <nombre>
+      	Santillana
+      </nombre>
+    </editorial>
+    <precio>
+    	19.55
+    </precio>
+</libro>
+<libro isbn="9789898015188">
+    <titulo>
+    15 formas de arreglar tu ordenador
+    </titulo>
+    <autores idAutor="FamDei">
+      <autor>
+          <nombre>
+		Paul J.
+          </nombre>
+          <primerApellido>
+          	Deitel
+          </primerApellido>
+
+          <segundoApellido>
+		Mark
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		duque			
+              </titulo> 
+              <fechaConcesion>
+             	5/3/1969
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+	<autor>
+          <nombre>
+          	Harvey M.
+          </nombre>
+          <primerApellido>
+          	Deitel
+          </primerApellido>
+          <segundoApellido>
+		Merinou
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		conde
+              </titulo> 
+              <fechaConcesion>
+             	3/3/1978
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+      <autor>
+          <nombre>
+          	Harvey M.
+          </nombre>
+          <primerApellido>
+          	Deitel
+          </primerApellido>
+          <segundoApellido>
+		Merinou
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		conde
+              </titulo> 
+              <fechaConcesion>
+             	3/3/1978
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>
+    </autores>
+    <editorial idEditorial="PreHalMex">
+      <nombre>
+      	Prentice Hall Mexico
+      </nombre>
+    </editorial>
+    <precio>
+    	85
+    </precio>
+</libro>
+<libro isbn="9658778014112">
+    <titulo>
+    16 es el numero total
+    </titulo>
+    <autores idAutor="LouPani">
+      <autor>	
+          <nombre>
+		Louis
+          </nombre>
+          <primerApellido>
+          	Panis
+          </primerApellido>
+          <segundoApellido>
+		Napoleon
+          </segundoApellido>
+          <tituloNobiliario>
+              <titulo>
+		marques
+              </titulo> 
+              <fechaConcesion>
+             	9/9/1984
+              </fechaConcesion>         
+          </tituloNobiliario>
+      </autor>		
+    </autores>
+    <editorial idEditorial="Blanch">
+      <nombre>
+      	Blancheta
+      </nombre>
+    </editorial>
+    <precio>
+    	16
+    </precio>
+</libro>
+</catalogo>
