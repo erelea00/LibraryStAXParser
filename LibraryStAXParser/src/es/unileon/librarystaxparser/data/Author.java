@@ -23,22 +23,8 @@ public class Author {
     /** Titulo que pertenece al autor **/
     private String m_sTitle;
     
-    /**
-     * Constructor de la clase
-     * @param m_sName nombre
-     * @param m_sFirstName primer apellido
-     * @param m_sSecondName segundo apellido
-     * @param m_sTitle titulo perteneciente al autor
-     */
-    public Author (String m_sName, String m_sFirstName, 
-                    String m_sSecondName, String m_sTitle){
-        
-        this.m_sName = m_sName;
-        this.m_sSurname_1 = m_sFirstName;
-        this.m_sSurname_2 = m_sSecondName;
-        this.m_sTitle = m_sTitle;
-        
-    }
+    /** Fecha concesión titulo */
+    private String m_sTitleDate;
     
     /**
      * Getter para el nombre.
@@ -75,6 +61,15 @@ public class Author {
     public String getTitle() {
         return this.m_sTitle;
     }
+    
+    /**
+     * Getter para la fecha de concesión de titulo
+     * @return fecha de concesión de titulo
+     */
+    public String getTitleDate(){
+        return this.m_sTitleDate;
+    }
+    
 
     /**
      * Setter para el nombre.
@@ -111,5 +106,15 @@ public class Author {
     public void setTitle(String title) {
         this.m_sTitle = title;
     }
+    
+    /**
+     * Setter para la fecha de concesión del titulo
+     * 
+     * @param titleDate titleDate String
+     */
+    public void setTitleDate(String titleDate){
+        this.m_sTitleDate = titleDate;
+    }
+    
 
 }
