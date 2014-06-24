@@ -1,6 +1,7 @@
 package es.unileon.librarystaxparser.parser;
 
 import java.util.Iterator;
+import javax.xml.stream.XMLStreamReader;
 
 /**
  * @author Adrian Diez

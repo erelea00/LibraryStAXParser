@@ -2,6 +2,8 @@ package es.unileon.librarystaxparser.main;
 
 import es.unileon.librarystaxparser.exceptions.FileNotFoundException;
 import es.unileon.librarystaxparser.exceptions.NoParametersException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @author Adrian Diez
@@ -14,9 +16,19 @@ import es.unileon.librarystaxparser.exceptions.NoParametersException;
  */
 public class Main {
 
-    public static void main(String[] args) throws NoParametersException{              
+    public static void main(String[] args){ 
         
-        if (args.length == 0) {
+        try {
+            checkParameters(args);
+        } catch (NoParametersException ex) {
+            ex.printStackTrace();
+        }
+               
+    }
+    
+    public static void checkParameters(String []args) throws NoParametersException{
+            
+         if (args.length == 0) {
             throw new NoParametersException("No se ha introducido la ubicación del fichero xml.");
         }else{
             
@@ -31,7 +43,8 @@ public class Main {
                 
             }
             
-        }
+        }   
+            
     }
     
 }
