@@ -1,6 +1,7 @@
 package es.unileon.librarystaxparser.main;
 
 import es.unileon.librarystaxparser.exceptions.FileNotFoundException;
+import es.unileon.librarystaxparser.exceptions.NoParametersException;
 import java.io.File;
 
 /**
@@ -18,7 +19,7 @@ public class ParameterProcessor {
     /**
      * Ruta del fichero xml
      */
-    private String fileRoute;
+    private String[] fileRoutes;
     
     /**
      * Constructor de la clase. 
@@ -26,7 +27,7 @@ public class ParameterProcessor {
      */
     public ParameterProcessor(String[] routes){
         
-        fileRoute = routes[0];
+        fileRoutes = routes;
 
     }
     
@@ -38,14 +39,35 @@ public class ParameterProcessor {
      */
     public String getFileName() throws FileNotFoundException{
         
-        
-        File file = new File(fileRoute);
+        String route = fileRoutes[0];
+        File file = new File(route);
  
 	if(file.exists()){           
-            return fileRoute; 
+            return route; 
 	}else{
             throw new FileNotFoundException("El fichero introducido no existe.");    
 	}
+        
+    }
+    
+    public void checkParameters() throws NoParametersException{
+        
+        if (fileRoutes.length == 0) {
+            throw new NoParametersException("No se ha introducido la ubicación del fichero xml.");
+        }else{
+            
+            String fileRoute = null;           
+            
+            try {
+                fileRoute = getFileName();
+            } catch (FileNotFoundException ex) {
+            
+                ex.printStackTrace(); //imprimir mensaje en vez de stack en la entrega final
+                
+            }
+            
+        }
+        
         
     }
     

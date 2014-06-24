@@ -16,33 +16,14 @@ public class Main {
 
     public static void main(String[] args){ 
         
+        ParameterProcessor processor = new ParameterProcessor(args);
+        
         try {
-            checkParameters(args);
+            processor.checkParameters();
         } catch (NoParametersException ex) {
             ex.printStackTrace(); //imprimir mensaje en vez de stack en la entrega final
         }
                
-    }
-    
-    public static void checkParameters(String []args) throws NoParametersException{
-            
-         if (args.length == 0) {
-            throw new NoParametersException("No se ha introducido la ubicación del fichero xml.");
-        }else{
-            
-            String fileRoute = null;           
-            ParameterProcessor processor = new ParameterProcessor(args);
-            
-            try {
-                fileRoute = processor.getFileName();
-            } catch (FileNotFoundException ex) {
-            
-                ex.printStackTrace(); //imprimir mensaje en vez de stack en la entrega final
-                
-            }
-            
-        }   
-            
     }
     
 }
