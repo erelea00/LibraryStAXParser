@@ -53,22 +53,11 @@ public class Main {
             display.displayErrorText(ex.getMessage());
             display.displayText("Modo de uso: java -jar XMLStaxParser.jar [rutaFicheroLibros.xml]");
             
-        } catch (FileNotFoundException ex) {
+        } catch (FileNotFoundException | ErrorOpenningFileException | 
+                NoBookToShowException | ErrorClosingFileException ex) {
             
             display.displayErrorText(ex.getMessage());
             
-        } catch (ErrorOpenningFileException ex) {
-            
-            display.displayErrorText(ex.getMessage());
-            
-        } catch (NoBookToShowException ex) {
-            
-            display.displayErrorText(ex.getMessage());
-            
-        } catch (ErrorClosingFileException ex) {
-            
-             display.displayErrorText(ex.getMessage());
-             
         }
     }
     
