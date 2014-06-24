@@ -12,19 +12,19 @@ package es.unileon.librarystaxparser.data;
 public class Author {
 
     /** Nombre del autor **/
-    private String m_sName;
+    private String m_sName = "";
 
     /** Primer apellido del autor **/
-    private String m_sSurname_1;
+    private String m_sSurname_1 = "";
 
     /** Segundo apellido del autor **/
-    private String m_sSurname_2;
+    private String m_sSurname_2 = "";
 
     /** Titulo que pertenece al autor **/
-    private String m_sTitle;
+    private String m_sTitle = "";
     
     /** Fecha concesión titulo */
-    private String m_sTitleDate;
+    private String m_sTitleDate = "";
     
     /**
      * Getter para el nombre.

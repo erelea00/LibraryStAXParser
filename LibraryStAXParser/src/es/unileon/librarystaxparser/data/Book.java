@@ -15,19 +15,19 @@ import java.util.List;
 public class Book {
 
     /** ISBN del libro **/
-    private String m_sISBN;
+    private String m_sISBN = "";
 
     /** Titulo del libro **/
-    private String m_sTitle;
+    private String m_sTitle = "";
 
     /** Autores del libro **/
     private List<Author> m_lAuthors;
 
     /** Editorial del libro **/
-    private String m_sEditorial;
+    private String m_sEditorial = "";
 
     /** Precio del libro **/
-    private double m_dPrice;
+    private double m_dPrice = 0;
 
     /**
      * Contructor clase
