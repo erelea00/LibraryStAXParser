@@ -64,7 +64,7 @@ public class XMLAuthorIterator implements XMLIterator{
     public void movePointerToNextStartAuthorTag(){
         
        try {
-            while (m_xmlStreamReader.hasNext() && !isAnAuthorStartTag() && !isAnAuthorEndTag()) {
+            while (m_xmlStreamReader.hasNext() && !isAnAuthorStartTag() && !isAnAuthorsEndTag()) {
                 m_xmlStreamReader.nextTag();
             }
         } catch (XMLStreamException ex) {
@@ -84,6 +84,13 @@ public class XMLAuthorIterator implements XMLIterator{
         
         return m_xmlStreamReader.isEndElement() && 
                 m_xmlStreamReader.getLocalName().equals("autor");
+ 
+    }
+    
+    private boolean isAnAuthorsEndTag() {
+        
+        return m_xmlStreamReader.isEndElement() && 
+                m_xmlStreamReader.getLocalName().equals("autores");
  
     }
     
