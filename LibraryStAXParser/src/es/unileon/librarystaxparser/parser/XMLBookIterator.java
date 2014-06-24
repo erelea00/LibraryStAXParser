@@ -208,7 +208,7 @@ public class XMLBookIterator implements XMLIterator {
 
                         if (m_stNodeStack.peek().equals("libro")) {
                             //Pertenece a libro. Perfect:
-                            book.setTitle(m_xmlStreamReader.getText().trim());
+                            book.setTitle(book.getTitle() + m_xmlStreamReader.getText().trim());
                         }
 
                         // Dejamos el stack como estaba
@@ -223,7 +223,7 @@ public class XMLBookIterator implements XMLIterator {
 
                         if (m_stNodeStack.peek().equals("editorial")) {
                             //Pertenece a editorial. Perfect:
-                            book.setEditorial(m_xmlStreamReader.getText().trim());
+                            book.setEditorial(book.getEditorial() + m_xmlStreamReader.getText().trim());
                         }
 
                         // Dejamos el stack como estaba
@@ -237,7 +237,12 @@ public class XMLBookIterator implements XMLIterator {
 
                         if (m_stNodeStack.peek().equals("libro")) {
                             //Pertenece a libro. Perfect:
-                            book.setPrice(Double.valueOf(m_xmlStreamReader.getText().trim()));
+                            String price = m_xmlStreamReader.getText().trim();
+                            if (price.isEmpty()) {
+                                book.setPrice(book.getPrice() + 0);
+                            } else {
+                                book.setPrice(Double.valueOf(m_xmlStreamReader.getText().trim()));
+                            }
                         }
 
                         // Dejamos el stack como estaba
