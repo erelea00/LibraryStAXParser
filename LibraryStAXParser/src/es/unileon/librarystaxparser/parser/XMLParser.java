@@ -14,7 +14,7 @@ public interface XMLParser {
     /**
      * Método que crea y devuelve un iterador para iterar sobre la colección 
      * de libros.
-     * @return Iterador de colecciónes de libros.
+     * @return Iterador de colecciones de libros.
      */
     public XMLIterator createBookIterator();
     
