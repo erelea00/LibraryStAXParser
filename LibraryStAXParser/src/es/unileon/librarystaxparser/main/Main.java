@@ -2,8 +2,6 @@ package es.unileon.librarystaxparser.main;
 
 import es.unileon.librarystaxparser.exceptions.FileNotFoundException;
 import es.unileon.librarystaxparser.exceptions.NoParametersException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * @author Adrian Diez
