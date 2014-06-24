@@ -40,6 +40,10 @@ public class XMLAuthorIterator implements XMLIterator{
         m_stNodeStack = new Stack<String>();
     }
     
+    /**
+     * Determina si el autor actual tiene siguiente
+     * @return verdadero si hay siguiente
+     */
     @Override
     public boolean hasNext(){
         
@@ -55,12 +59,18 @@ public class XMLAuthorIterator implements XMLIterator{
         
         return result;
     }
-
+    
+    /**
+     * Operación de borrar elemento no soportada
+     */
     @Override
     public void remove() {
         throw new UnsupportedOperationException("Operación no soportada");
     }
     
+    /**
+     * Mueve el puntero a la siguiente etiqueta "autor"
+     */
     public void movePointerToNextStartAuthorTag(){
         
        try {
@@ -73,6 +83,10 @@ public class XMLAuthorIterator implements XMLIterator{
         
     }
     
+    /**
+     * Comprueba si el elemento actual es una etiqueta de apertura de autor
+     * @return verdadero si la etiqueta es de apertura
+     */
     private boolean isAnAuthorStartTag() {
         
         return m_xmlStreamReader.isStartElement() && 
@@ -80,6 +94,10 @@ public class XMLAuthorIterator implements XMLIterator{
         
     }
     
+    /**
+     * Comprueba si el elemento actual es una etiqueta de final de autor
+     * @return verdadero si la etiqueta es de final
+     */
     private boolean isAnAuthorEndTag() {
         
         return m_xmlStreamReader.isEndElement() && 
@@ -87,6 +105,10 @@ public class XMLAuthorIterator implements XMLIterator{
  
     }
     
+    /**
+     * Comprueba si el elemento actual es una etiqueta de apertura de autores
+     * @return verdadero si la etiqueta es de apertura
+     */
     private boolean isAnAuthorsEndTag() {
         
         return m_xmlStreamReader.isEndElement() && 
@@ -94,6 +116,10 @@ public class XMLAuthorIterator implements XMLIterator{
  
     }
     
+    /**
+     * Desplaza el puntero al siguiente elemento del fichero XML
+     * @return Un autor con sus datos correspondientes
+     */
     @Override
     public Author next(){
         
@@ -115,6 +141,11 @@ public class XMLAuthorIterator implements XMLIterator{
         
     }
     
+    /**
+     * Extrae la información de los autores del fichero XML
+     * @return El autor con sus datos
+     * @throws XMLStreamException 
+     */
     private Author extractAuthorInfoFromXML() throws XMLStreamException{
         
         Author author = new Author();
