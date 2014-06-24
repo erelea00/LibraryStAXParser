@@ -1,10 +1,7 @@
 package es.unileon.librarystaxparser.parser;
 
 import es.unileon.librarystaxparser.data.Book;
-import es.unileon.librarystaxparser.exceptions.ErrorOpenningFileException;
 import java.util.Stack;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
@@ -23,13 +20,13 @@ public class XMLBookIterator implements XMLIterator {
     /**
      * Stream que gestiona el puntero al XML y sus operaciones de I/O.
      */
-    private XMLStreamReader m_xmlStreamReader;
+    private final XMLStreamReader m_xmlStreamReader;
     
     /**
      * Pila en la que almacenar los nodos abiertos (para saber en que nodo
      * nos encontramos para cada instante del bucle).
      */
-    private Stack<String> m_stNodeStack;  
+    private final Stack<String> m_stNodeStack;  
     
     
     
