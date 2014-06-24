@@ -21,7 +21,7 @@ public class XMLStAXParser implements XMLParser {
     /**
      * Stream que gestiona el puntero al XML y sus operaciones de I/O.
      */
-    XMLStreamReader m_xmlStreamReader;
+    private XMLStreamReader m_xmlStreamReader;
     
     /**
      * Constructor de la clase. Toma el fichero pasado por parámetro y lo abre
@@ -47,8 +47,7 @@ public class XMLStAXParser implements XMLParser {
     
     @Override
     public XMLIterator createBookIterator() {
-        return null;
-        // return new XMLBookIterator(m_xmlStreamReader);
+        return new XMLBookIterator(m_xmlStreamReader);
     }
     
 }
