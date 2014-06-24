@@ -50,7 +50,7 @@ public class ParameterProcessor {
         
     }
     
-    public void checkParameters() throws NoParametersException{
+    public void checkParameters() throws NoParametersException, FileNotFoundException{
         
         if (fileRoutes.length == 0) {
             throw new NoParametersException("No se ha introducido la ubicación del fichero xml.");
@@ -61,9 +61,7 @@ public class ParameterProcessor {
             try {
                 fileRoute = getFileName();
             } catch (FileNotFoundException ex) {
-            
-                ex.printStackTrace(); //imprimir mensaje en vez de stack en la entrega final
-                
+                throw new FileNotFoundException("El fichero introducido no existe");
             }
             
         }
