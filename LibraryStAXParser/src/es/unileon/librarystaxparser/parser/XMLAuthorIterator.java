@@ -147,7 +147,6 @@ public class XMLAuthorIterator implements XMLIterator{
                     }else if(m_stNodeStack.peek().equals("fechaConcesion")){
                         
                        String nodo = m_stNodeStack.pop();
-                       String nodo2 = m_stNodeStack.pop();
                        
                         if (m_stNodeStack.peek().equals("tituloNobiliario")) {
                             
@@ -155,7 +154,6 @@ public class XMLAuthorIterator implements XMLIterator{
                         }
                         
                         m_stNodeStack.push(nodo);
-                        m_stNodeStack.push(nodo2);
                     }
                 
                     break;
