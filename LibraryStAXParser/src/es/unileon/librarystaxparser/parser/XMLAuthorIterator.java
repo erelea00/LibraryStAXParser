@@ -76,14 +76,14 @@ public class XMLAuthorIterator implements XMLIterator{
     private boolean isAnAuthorStartTag() {
         
         return m_xmlStreamReader.isStartElement() && 
-                m_xmlStreamReader.getLocalName().equals("author");
+                m_xmlStreamReader.getLocalName().equals("autor");
         
     }
     
     private boolean isAnAuthorEndTag() {
         
         return m_xmlStreamReader.isEndElement() && 
-                m_xmlStreamReader.getLocalName().equals("author");
+                m_xmlStreamReader.getLocalName().equals("autor");
  
     }
     
