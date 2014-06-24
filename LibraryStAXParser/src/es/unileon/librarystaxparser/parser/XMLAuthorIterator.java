@@ -161,7 +161,7 @@ public class XMLAuthorIterator implements XMLIterator{
                 case XMLStreamConstants.CHARACTERS:
                     if (m_stNodeStack.peek().equals("nombre")) {
                         
-                        author.setName(author.getName() + m_xmlStreamReader.getText().trim());
+                        author.setName(m_xmlStreamReader.getText().trim());
                         
                     }else if (m_stNodeStack.peek().equals("primerApellido")){
                         
