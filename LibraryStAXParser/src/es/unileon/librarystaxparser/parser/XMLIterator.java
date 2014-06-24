@@ -11,7 +11,7 @@ import java.util.Iterator;
  * 
  * Interfaz que implementarán los iteradores xml concretos
  */
-public interface XMLIterator{
+public interface XMLIterator extends Iterator{
     
     /**
      * Método que determina si hay elemento siguiente en la colección.
