@@ -165,11 +165,11 @@ public class XMLAuthorIterator implements XMLIterator{
                         
                     }else if (m_stNodeStack.peek().equals("primerApellido")){
                         
-                        author.setFirstSurname(m_xmlStreamReader.getText().trim());
+                        author.setFirstSurname(author.getFirstSurname() + m_xmlStreamReader.getText().trim());
                         
                     }else if(m_stNodeStack.peek().equals("segundoApellido")){
                         
-                         author.setSecondSurname(m_xmlStreamReader.getText().trim());
+                         author.setSecondSurname(author.getSecondSurname() + m_xmlStreamReader.getText().trim());
                         
                     }else if(m_stNodeStack.peek().equals("titulo")){
                         
@@ -177,7 +177,7 @@ public class XMLAuthorIterator implements XMLIterator{
                         
                         if (m_stNodeStack.peek().equals("tituloNobiliario")) {
                             
-                            author.setTitle(m_xmlStreamReader.getText().trim());
+                            author.setTitle(author.getTitle() + m_xmlStreamReader.getText().trim());
                         }
                         
                         m_stNodeStack.push(nodo);
@@ -188,7 +188,7 @@ public class XMLAuthorIterator implements XMLIterator{
                        
                         if (m_stNodeStack.peek().equals("tituloNobiliario")) {
                             
-                            author.setTitleDate(m_xmlStreamReader.getText().trim()); 
+                            author.setTitleDate(author.getTitleDate() + m_xmlStreamReader.getText().trim()); 
                         }
                         
                         m_stNodeStack.push(nodo);
