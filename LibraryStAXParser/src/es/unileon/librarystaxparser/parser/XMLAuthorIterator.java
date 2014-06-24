@@ -123,15 +123,15 @@ public class XMLAuthorIterator implements XMLIterator{
                 case XMLStreamConstants.CHARACTERS:
                     if (m_stNodeStack.peek().equals("nombre")) {
                         
-                        author.setName(m_xmlStreamReader.getText());
+                        author.setName(m_xmlStreamReader.getText().trim());
                         
                     }else if (m_stNodeStack.peek().equals("primerApellido")){
                         
-                        author.setFirstSurname(m_xmlStreamReader.getText());
+                        author.setFirstSurname(m_xmlStreamReader.getText().trim());
                         
                     }else if(m_stNodeStack.peek().equals("segundoApellido")){
                         
-                         author.setSecondSurname(m_xmlStreamReader.getText());
+                         author.setSecondSurname(m_xmlStreamReader.getText().trim());
                         
                     }else if(m_stNodeStack.peek().equals("titulo")){
                         
@@ -139,7 +139,7 @@ public class XMLAuthorIterator implements XMLIterator{
                         
                         if (m_stNodeStack.peek().equals("tituloNobiliario")) {
                             //Pertenece a editorial. Perfect:
-                            author.setTitle(m_xmlStreamReader.getText());
+                            author.setTitle(m_xmlStreamReader.getText().trim());
                         }
                         
                         m_stNodeStack.push(nodo);
@@ -151,7 +151,7 @@ public class XMLAuthorIterator implements XMLIterator{
                        
                         if (m_stNodeStack.peek().equals("tituloNobiliario")) {
                             
-                            author.setTitleDate(m_xmlStreamReader.getText()); 
+                            author.setTitleDate(m_xmlStreamReader.getText().trim()); 
                         }
                         
                         m_stNodeStack.push(nodo);
