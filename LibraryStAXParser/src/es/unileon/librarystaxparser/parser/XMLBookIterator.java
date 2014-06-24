@@ -180,7 +180,7 @@ public class XMLBookIterator implements XMLIterator {
                         * -> Precondición: el puntero debe apuntar al nodo 
                                 "<autores>"
                         * -> Postcondición: el puntero debe apuntar al fin del
-                                último nodo de autor "</autor>"
+                                nodo "</autores>"
                         */
                         
                         XMLAuthorIterator authorIterator = createAuthorIterator();
@@ -189,6 +189,8 @@ public class XMLBookIterator implements XMLIterator {
                             book.addAuthor(authorIterator.next());
                         }
                         
+                        // Sacamos el nodo autores de la pila.
+                        m_stNodeStack.pop();
                     } 
                     
                     break;
@@ -199,7 +201,18 @@ public class XMLBookIterator implements XMLIterator {
                     // este texto:
                     if (m_stNodeStack.peek().equals("titulo")) {
                         
-                        book.setTitle(m_xmlStreamReader.getText());
+                        // Verificamos si el título pertenece al libro:
+                        
+                        // Sacamos el nodo "<titulo>" del stack
+                        String nodo = m_stNodeStack.pop();
+
+                        if (m_stNodeStack.peek().equals("libro")) {
+                            //Pertenece a libro. Perfect:
+                            book.setTitle(m_xmlStreamReader.getText().trim());
+                        }
+
+                        // Dejamos el stack como estaba
+                        m_stNodeStack.push(nodo);
                         
                     } else if (m_stNodeStack.peek().equals("nombre")) {
                         
@@ -210,15 +223,26 @@ public class XMLBookIterator implements XMLIterator {
 
                         if (m_stNodeStack.peek().equals("editorial")) {
                             //Pertenece a editorial. Perfect:
-                            book.setEditorial(m_xmlStreamReader.getText());
+                            book.setEditorial(m_xmlStreamReader.getText().trim());
                         }
 
                         // Dejamos el stack como estaba
                         m_stNodeStack.push(nodo);
                         
                     } else if (m_stNodeStack.peek().equals("precio")) {
+                        // Verificamos si el precio pertenece al libro:
                         
-                        book.setPrice(Double.valueOf(m_xmlStreamReader.getText()));
+                        // Sacamos el nodo "<precio>" del stack
+                        String nodo = m_stNodeStack.pop();
+
+                        if (m_stNodeStack.peek().equals("libro")) {
+                            //Pertenece a libro. Perfect:
+                            book.setPrice(Double.valueOf(m_xmlStreamReader.getText().trim()));
+                        }
+
+                        // Dejamos el stack como estaba
+                        m_stNodeStack.push(nodo);
+                        
                         
                     }
                     break;
