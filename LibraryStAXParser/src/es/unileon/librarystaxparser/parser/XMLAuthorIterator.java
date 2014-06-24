@@ -64,7 +64,7 @@ public class XMLAuthorIterator implements XMLIterator{
     public void movePointerToNextStartAuthorTag(){
         
        try {
-            while (m_xmlStreamReader.hasNext() && !isAnAuthorStartTag()) {
+            while (m_xmlStreamReader.hasNext() && !isAnAuthorStartTag() && !isAnAuthorEndTag()) {
                 m_xmlStreamReader.nextTag();
             }
         } catch (XMLStreamException ex) {
@@ -138,7 +138,7 @@ public class XMLAuthorIterator implements XMLIterator{
                         String nodo = m_stNodeStack.pop();
                         
                         if (m_stNodeStack.peek().equals("tituloNobiliario")) {
-                            //Pertenece a editorial. Perfect:
+                            
                             author.setTitle(m_xmlStreamReader.getText().trim());
                         }
                         
