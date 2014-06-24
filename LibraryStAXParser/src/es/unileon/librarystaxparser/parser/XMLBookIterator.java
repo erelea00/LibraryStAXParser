@@ -134,6 +134,7 @@ public class XMLBookIterator implements XMLIterator {
         if (isABookStartTag()) {
             
             try {
+                // Procesamos el XML para rellenar los campos del libro.     
                 book = extractBookInfoFromXML();
             } catch (XMLStreamException ex) {
                 /*No hay mas libros. Error al leer.*/
@@ -141,15 +142,14 @@ public class XMLBookIterator implements XMLIterator {
             
         }
         
-        // Procesamos el XML para rellenar los campos del libro.
         return book;
     }
 
     /**
      * Extrae la información del libro al que apunta el puntero XML.<br/><br/>
      * 
-     * Precondicion: el puntero debe apuntar a &lt;autor&gt;
-     * Postcondicion: el puntero debe apuntar a &lt;/autor&gt;
+     * Precondicion: el puntero debe apuntar a &lt;libro&gt;
+     * Postcondicion: el puntero debe apuntar a &lt;/libro&gt;
      * 
      * @return Libro con todos los campos rellenos.
      * @throws XMLStreamException 
