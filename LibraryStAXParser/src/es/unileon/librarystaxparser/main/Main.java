@@ -21,7 +21,7 @@ public class Main {
         try {
             checkParameters(args);
         } catch (NoParametersException ex) {
-            ex.printStackTrace();
+            ex.printStackTrace(); //imprimir mensaje en vez de stack en la entrega final
         }
                
     }
@@ -39,7 +39,7 @@ public class Main {
                 fileRoute = processor.getFileName();
             } catch (FileNotFoundException ex) {
             
-                ex.printStackTrace();
+                ex.printStackTrace(); //imprimir mensaje en vez de stack en la entrega final
                 
             }
             
