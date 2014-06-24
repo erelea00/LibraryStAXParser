@@ -10,8 +10,13 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
 /**
- *
- * @author ivan
+ * @author Adrian Diez
+ * @author Emanuel Iosif
+ * @author Ivan de Paz
+ * @since 24/06/2014
+ * @version 1 
+ * 
+ * 
  */
 public class XMLBookIterator implements XMLIterator {
 
@@ -140,7 +145,15 @@ public class XMLBookIterator implements XMLIterator {
         return book;
     }
 
-    
+    /**
+     * Extrae la información del libro al que apunta el puntero XML.<br/><br/>
+     * 
+     * Precondicion: el puntero debe apuntar a &lt;autor&gt;
+     * Postcondicion: el puntero debe apuntar a &lt;/autor&gt;
+     * 
+     * @return Libro con todos los campos rellenos.
+     * @throws XMLStreamException 
+     */
     private Book extractBookInfoFromXML() throws XMLStreamException {
         Book book = new Book();
             
