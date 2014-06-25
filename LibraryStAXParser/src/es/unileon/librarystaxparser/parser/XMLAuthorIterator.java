@@ -117,7 +117,8 @@ public class XMLAuthorIterator implements XMLIterator{
     }
     
     /**
-     * Desplaza el puntero al siguiente elemento del fichero XML
+     * Desplaza el puntero al siguiente elemento "autor" del fichero XML, saca la información
+     * del autor y la inyecta en nuestra clase Author 
      * @return Un autor con sus datos correspondientes
      */
     @Override
