@@ -50,16 +50,19 @@ public class ParameterProcessor {
         
     }
     
+    /**
+     * Comprueba si se han introducido los parametros correctamente por consola
+     * @throws NoParametersException En caso de que no se hayan introducido parametros
+     * @throws FileNotFoundException En caso de que el fichero no se encuentra en la ruta introducida como parametro
+     */
     public void checkParameters() throws NoParametersException, FileNotFoundException{
         
         if (fileRoutes.length == 0) {
             throw new NoParametersException("No se ha introducido la ubicación del fichero xml.");
-        }else{
-            
-            String fileRoute = null;           
+        }else{                                  
             
             try {
-                fileRoute = getFileName();
+                getFileName();
             } catch (FileNotFoundException ex) {
                 throw new FileNotFoundException("El fichero introducido no existe");
             }
